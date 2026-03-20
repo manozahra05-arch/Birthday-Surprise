@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AMAAN ❤️ LAIBA</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        .slide {
+            display: none;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: white;
+            color: #ff4b5c;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #ff4b5c;
+            color: white;
+        }
+
+        .tag {
+            margin-top: 30px;
+            font-size: 22px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3">
+</audio>
+
+<!-- Slides -->
+
+<div class="slide active">
+    <h1>👀 Oye Dr Laiba...</h1>
+    <p>AMAAN yahan hai 😏</p>
+    <button onclick="nextSlide()">Oh really? 😎</button>
+</div>
+
+<div class="slide">
+    <h1>😂 Aaj ka plan?</h1>
+    <p>Larna ya ignore karna? 😆</p>
+    <button onclick="nextSlide()">Larai 😤</button>
+</div>
+
+<div class="slide">
+    <h1>🤣 Expected tha</h1>
+    <p>AMAAN & LAIBA = daily drama 💀</p>
+    <button onclick="nextSlide()">Facts 😂</button>
+</div>
+
+<div class="slide">
+    <h1>😏 Truth time</h1>
+    <p>Larai jitni bhi ho… rehna sath hi hai 💖</p>
+    <button onclick="nextSlide()">Hmm 🥺</button>
+</div>
+
+<div class="slide">
+    <h1>💀 Confession</h1>
+    <p>Tumhein tang karna = AMAAN ki fav hobby 😌</p>
+    <button onclick="nextSlide()">Chup 😒</button>
+</div>
+
+<div class="slide">
+    <h1>😂 Reality check</h1>
+    <p>Tum bina life boring ho jati hai 😭</p>
+    <button onclick="nextSlide()">Acha 😏</button>
+</div>
+
+<div class="slide">
+    <h1>🎉 HAPPY BIRTHDAY DR LAIBA 🎉</h1>
+    <p>From AMAAN 💖</p>
+    <button onclick="nextSlide()">Open 💌</button>
+</div>
+
+<div class="slide">
+    <h2>💌 Dear Dr Laiba,</h2>
+    <p>
+        Hum lartay hain… tang kartay hain…<br><br>
+        Lekin sach yeh hai…<br><br>
+        Tum meri life ka sab se important hissa ho 💕<br><br>
+        Tum ho toh sab hai 🥺<br><br>
+        May Allah tumhe hamesha khush rakhe 🤍<br><br>
+        Tumhari har dua qabool ho ✨<br><br>
+        Aur humari yeh #donopagal friendship hamesha aisi hi rahe 😂❤️<br><br>
+        ❤️ AMAAN ❤️ LAIBA ❤️
+    </p>
+
+    <div class="tag">#donopagal 😜</div>
+
+    <button onclick="playMusic()">Play Music 🎶</button>
+</div>
+
+<script>
+let current = 0;
+let slides = document.getElementsByClassName("slide");
+
+function nextSlide() {
+    slides[current].classList.remove("active");
+    current++;
+    slides[current].classList.add("active");
+}
+
+function playMusic() {
+    document.getElementById("music").play();
+}
+</script>
+
+</body>
+</html>
